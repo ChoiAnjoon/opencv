@@ -11,7 +11,7 @@ plt.imshow(imgRGB)
 plt.show()
 
 # 그레이스케일 영상 출력
-imgGray = cv2.imread('cat.bmp', cv2.IMREAD_GRAYSCALE)
+imgGray = cv2.imread('C:\dev\opencv\ch01\cat.bmp', cv2.IMREAD_GRAYSCALE)
 
 plt.axis('off')
 plt.imshow(imgGray, cmap='gray')
