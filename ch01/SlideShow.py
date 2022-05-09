@@ -11,7 +11,7 @@ import cv2
 #img_files = [os.path.join('.\\images', file) for file in file_list if file.endswith('.jpg')]
 
 # glob.glob() 사용 방법
-img_files = glob.glob('.\\images\\*.jpg')
+img_files = glob.glob('C:\dev\opencv\ch01\images\*.jpg')
 
 if not img_files:
     print("There are no jpg files in 'images' folder")
@@ -33,7 +33,7 @@ while True:
         break
 
     cv2.imshow('image', img)
-    if cv2.waitKey(1000) >= 0:
+    if cv2.waitKey(1000) >= 0: # 키보드의 아스키 코드는 0보다 크다. 아무키나 눌러서 아웃하는 코드
         break
 
     idx += 1

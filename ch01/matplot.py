@@ -3,7 +3,7 @@ import cv2
 
 
 # 컬러 영상 출력
-imgBGR = cv2.imread('cat.bmp')
+imgBGR = cv2.imread('C:\dev\opencv\ch01\cat.bmp')
 imgRGB = cv2.cvtColor(imgBGR, cv2.COLOR_BGR2RGB)
 
 plt.axis('off')
