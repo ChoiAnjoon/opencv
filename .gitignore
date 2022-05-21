@@ -3,3 +3,10 @@
 
 .ipynb_checkpoints
 __pycache__
+
+*.jpg
+*.bmp
+*.mp4
+*.png
+
+test
