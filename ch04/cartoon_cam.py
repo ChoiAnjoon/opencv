@@ -23,6 +23,10 @@ def pencil_sketch(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     blr = cv2.GaussianBlur(gray, (0, 0), 3)
     dst = cv2.divide(gray, blr, scale=255)
+    
+    # 컬러이미지로 받기 때문에 컬러로 아웃풋을 출력하는 것이 좋음
+    dst = cv2.cvtColor(dst, cv2.COLOR_GRAY2BGR)
+
     return dst
 
 
